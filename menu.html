@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Our Menu | Simple Café</title>
+  <meta name="description" content="Explore the coffee, drinks, breakfast, and desserts menu at Simple Café.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Simple<span>Café.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navMenu">☰</button>
+
+      <nav class="navbar" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-button">Find Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Menu Hero -->
+    <section class="page-hero menu-hero">
+      <div class="container page-hero-content">
+        <p class="eyebrow">MADE FRESH, SERVED WITH LOVE</p>
+        <h1>Our Menu, <span>Your Favourites.</span></h1>
+        <p>
+          From your first morning coffee to a little afternoon treat,
+          discover something delicious.
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section full-menu-section">
+      <div class="container">
+
+        <div class="section-heading menu-heading">
+          <div>
+            <p class="eyebrow">TAKE A LOOK</p>
+            <h2>Something good<br><span>for every mood.</span></h2>
+          </div>
+          <p class="menu-intro">
+            Explore our selection of café favourites.
+            Filter by category to find what you love.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="menu-filters" role="group" aria-label="Filter menu by category">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">
+            All Items
+          </button>
+          <button class="filter-btn" type="button" data-filter="coffee" aria-pressed="false">
+            Coffee
+          </button>
+          <button class="filter-btn" type="button" data-filter="drinks" aria-pressed="false">
+            Cold Drinks
+          </button>
+          <button class="filter-btn" type="button" data-filter="breakfast" aria-pressed="false">
+            Breakfast
+          </button>
+          <button class="filter-btn" type="button" data-filter="dessert" aria-pressed="false">
+            Desserts
+          </button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="full-menu-grid" id="menuItems">
+
+          <article class="food-card" data-category="coffee">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=85"
+              alt="Cappuccino coffee" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Cappuccino</h3>
+                <span class="price">৳180</span>
+              </div>
+              <p>Espresso with steamed milk and a soft layer of foam.</p>
+              <span class="food-category">Coffee</span>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="coffee">
+            <img
+              src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=700&q=85"
+              alt="Espresso coffee" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Espresso</h3>
+                <span class="price">৳120</span>
+              </div>
+              <p>A bold, rich coffee shot for a simple pick-me-up.</p>
+              <span class="food-category">Coffee</span>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="coffee">
+            <img
+              src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85"
+              alt="Latte coffee" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Café Latte</h3>
+                <span class="price">৳200</span>
+              </div>
+              <p>Smooth espresso blended with creamy steamed milk.</p>
+              <span class="food-category">Coffee</span>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="drinks">
+            <img
+              src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85"
+              alt="Iced coffee" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Iced Coffee</h3>
+                <span class="price">৳220</span>
+              </div>
+              <p>Chilled coffee served over ice for a refreshing break.</p>
+              <span class="food-category">Cold Drinks</span>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="drinks">
+            <img
+              src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=700&q=85"
+              alt="Fresh refreshing drink" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Fresh Lemonade</h3>
+                <span class="price">৳150</span>
+              </div>
+              <p>A refreshing citrus drink with a bright, fresh flavour.</p>
+              <span class="food-category">Cold Drinks</span>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="drinks">
+            <img
+              src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=85"
+              alt="Chocolate milkshake" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Chocolate Shake</h3>
+                <span class="price">৳250</span>
+              </div>
+              <p>A creamy chocolate treat for your sweet cravings.</p>
+              <span class="food-category">Cold Drinks</span>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="breakfast">
+            <img
+              src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=700&q=85"
+              alt="Breakfast plate with toast and eggs" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Garden Breakfast</h3>
+                <span class="price">৳320</span>
+              </div>
+              <p>A filling breakfast plate for a relaxed morning.</p>
+              <span class="food-category">Breakfast</span>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="breakfast">
+            <img
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=85"
+              alt="Fresh butter croissant" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Butter Croissant</h3>
+                <span class="price">৳120</span>
+              </div>
+              <p>A golden, flaky pastry that pairs perfectly with coffee.</p>
+              <span class="food-category">Breakfast</span>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="breakfast">
+            <img
+              src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=700&q=85"
+              alt="Fresh pancakes" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Classic Pancakes</h3>
+                <span class="price">৳280</span>
+              </div>
+              <p>Soft pancakes served as a comforting breakfast favourite.</p>
+              <span class="food-category">Breakfast</span>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="dessert">
+            <img
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=85"
+              alt="Chocolate cake slice" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Chocolate Cake</h3>
+                <span class="price">৳220</span>
+              </div>
+              <p>A rich chocolate dessert for a little moment of joy.</p>
+              <span class="food-category">Desserts</span>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="dessert">
+            <img
+              src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=85"
+              alt="Creamy dessert with fresh fruit" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Fruit & Cream</h3>
+                <span class="price">৳190</span>
+              </div>
+              <p>A light, creamy dessert with a fresh fruity touch.</p>
+              <span class="food-category">Desserts</span>
+            </div>
+          </article>
+
+          <article class="food-card" data-category="dessert">
+            <img
+              src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=85"
+              alt="Ice cream dessert" loading="lazy">
+            <div class="food-card-body">
+              <div class="food-title-row">
+                <h3>Ice Cream</h3>
+                <span class="price">৳160</span>
+              </div>
+              <p>A cool and creamy treat to finish your visit.</p>
+              <span class="food-category">Desserts</span>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="menu-empty" id="menuEmpty" hidden>
+          No items found in this category.
+        </p>
+
+        <p class="menu-disclaimer">
+          Menu items and prices are examples and may change.
+          Please confirm the final menu and prices with the café.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="quote-section">
+      <div class="container quote-content">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <h2>Your favourite cup is waiting.</h2>
+        <p>We would love to welcome you to Simple Café.</p>
+        <a href="contact.html" class="btn btn-light">Plan Your Visit</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Simple<span>Café.</span></a>
+        <p>Good coffee, good food, and good moments. We can't wait to welcome you.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html" aria-current="page">Our Menu</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Visit Us</h3>
+        <p>Address: Add your café's real address here</p>
+        <p>Email: hello@simplecafe.example</p>
+        <p>Phone: Add your phone number</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Follow Along</h3>
+        <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear">2026</span> Simple Café. All rights reserved.</p>
+      <p>Made with love and a little coffee ☕</p>
+    </div>
+  </footer>
+
+</body>
+</html>
