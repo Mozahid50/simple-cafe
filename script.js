@@ -7,10 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(
         "#menuToggle, .menu-toggle"
     );
-
-    const navbar = document.querySelector(
-        "#navbar, .navbar"
-    );
+const navbar = document.querySelector("#navMenu");
 
     if (menuToggle && navbar) {
         menuToggle.setAttribute("aria-expanded", "false");
