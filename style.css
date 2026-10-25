@@ -1494,3 +1494,36 @@ p {
     min-height: 280px;
   }
 }
+
+/* Mobile Navigation Fix */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fffaf0;
+    padding: 20px;
+    gap: 18px;
+    z-index: 9999;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    color: #3e3025;
+    text-decoration: none;
+    padding: 8px 0;
+  }
+
+  .navbar,
+  nav {
+    position: relative;
+  }
+}
